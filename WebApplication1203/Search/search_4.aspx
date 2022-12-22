@@ -27,7 +27,7 @@
             <EmptyDataTemplate>
                 歡迎使用搜尋功能：<br /> 
                 <br />
-                若輸入ID後沒有顯示書籍項目，則ID錯誤，請重新搜尋！
+                若輸入Location後沒有顯示書籍項目，則Location錯誤，請重新搜尋！
             </EmptyDataTemplate>
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Search_By_ProductID %>" SelectCommand="SELECT * FROM [Products] WHERE ([Location] LIKE '%' + @Location + '%')">

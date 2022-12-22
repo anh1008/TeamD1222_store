@@ -47,12 +47,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/" style="color:yellow;"><strong>Ace Flicker Bookstore</strong></a>
+                    <a class="navbar-brand" runat="server" href="~/" style="color:yellow;"><strong>Ace Flicker</strong></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/" style="color:snow">Home</a></li>
-                        <li><a runat="server" href="~/About" style="color:snow">About</a></li>
+                       
                         <li><a runat="server" href="~/Contact" style="color:snow">Contact</a></li>
                         <li><a runat="server" href="~/Categories" style="color:snow">Categories</a></li>
                         <li><a runat="server" href="~/Products/list" style="color:snow">ProductList</a></li>
