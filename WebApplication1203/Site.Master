@@ -61,10 +61,12 @@
                          <li><a runat="server" href="~/Users/Edit" style="color:snow">Edit Users</a></li>
                          <li><a runat="server" href="~/Search/search_1" style="color:snow">Search</a></li>
                         <li><a runat="server" href="~/Trans/History" style="color:snow">Order History</a></li>
+                        <li><a runat="server" href="~/StoreAPI" style="color:snow">合作商家查詢</a></li>
                         <a href="https://localhost:44345/login"><img src="軟工-登入.jpg" alt="sign_in" width="55" height="55" style="position: fixed; top: 20; right:0"></a>
                     </ul>
                 </div>
             </div>
+
         </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">

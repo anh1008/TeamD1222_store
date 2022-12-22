@@ -5,7 +5,9 @@
     <asp:LinkButton ID="LinkButton3" runat="server" BackColor="Yellow" ForeColor="Black" OnClick="LinkButton3_Click">Title </asp:LinkButton>
 &nbsp;&nbsp;&nbsp;
     <asp:LinkButton ID="LinkButton4" runat="server" BackColor="Yellow" ForeColor="Black" OnClick="LinkButton4_Click">Category(ID)</asp:LinkButton>
-    </p>
+    &nbsp;&nbsp;&nbsp;
+    <asp:LinkButton ID="LinkButton5" runat="server" BackColor="Yellow" ForeColor="Black" OnClick="LinkButton5_Click">Location</asp:LinkButton>
+    <br />
         Search _ by _ product (ID)：  
     <asp:TextBox ID="Search_box" runat="server" Height="27px" Width="138px"></asp:TextBox>
     <asp:Button ID="enter_button" runat="server" Text="ENTER" Height="31px" Width="66px" />

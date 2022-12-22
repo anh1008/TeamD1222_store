@@ -2347,6 +2347,7 @@ pre code {
 }
 table {
   background-color: transparent;
+    margin-right: 2px;
 }
 table col[class*="col-"] {
   position: static;
@@ -4292,8 +4293,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
-  right: 0;
-  left: 0;
+  right: -2px;
+  left: 2px;
   z-index: 1030;
 }
 .navbar-fixed-top .navbar-collapse,

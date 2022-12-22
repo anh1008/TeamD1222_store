@@ -11,7 +11,7 @@ namespace WebApplication1203.Search
 {
 
 
-    public partial class WebForm1
+    public partial class WebForm3
     {
 
         /// <summary>
@@ -78,12 +78,12 @@ namespace WebApplication1203.Search
         protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// Search_By_Title 控制項。
+        /// SqlDataSource1 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource Search_By_Title;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }

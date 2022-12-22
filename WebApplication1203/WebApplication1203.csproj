@@ -45,6 +45,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -79,9 +82,6 @@
     </Reference>
     <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -161,7 +161,10 @@
     <Content Include="Search\search_1.aspx" />
     <Content Include="Search\search_2.aspx" />
     <Content Include="Search\search_3.aspx" />
+    <Content Include="Search\search_4.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="StoreAPI.aspx" />
+    <Content Include="storeapi.css" />
     <Content Include="Trans\Edit.aspx" />
     <Content Include="Trans\History.aspx" />
     <Content Include="Users\Edit.aspx" />
@@ -187,6 +190,14 @@
     <Compile Include="Categories\default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="StoreAPI.aspx.cs">
+      <DependentUpon>StoreAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StoreAPI.aspx.designer.cs">
+      <DependentUpon>StoreAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StoreClass.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -253,6 +264,13 @@
     </Compile>
     <Compile Include="Search\search_3.aspx.designer.cs">
       <DependentUpon>search_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\search_4.aspx.cs">
+      <DependentUpon>search_4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\search_4.aspx.designer.cs">
+      <DependentUpon>search_4.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

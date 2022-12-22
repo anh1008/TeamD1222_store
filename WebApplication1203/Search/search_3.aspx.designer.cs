@@ -42,6 +42,15 @@ namespace WebApplication1203.Search
         protected global::System.Web.UI.WebControls.LinkButton LinkButton3;
 
         /// <summary>
+        /// LinkButton4 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton4;
+
+        /// <summary>
         /// TextBox1 控制項。
         /// </summary>
         /// <remarks>

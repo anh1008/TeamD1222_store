@@ -8,6 +8,8 @@
         <asp:LinkButton ID="LinkButton2" runat="server" BackColor="Yellow" ForeColor="Black" OnClick="LinkButton2_Click">Title</asp:LinkButton>
 &nbsp;&nbsp;&nbsp;
         <asp:LinkButton ID="LinkButton3" runat="server" BackColor="Yellow" ForeColor="Black" OnClick="LinkButton3_Click">Category(ID)</asp:LinkButton>
+        &nbsp;&nbsp;&nbsp;
+        <asp:LinkButton ID="LinkButton4" runat="server" BackColor="Yellow" ForeColor="Black" OnClick="LinkButton4_Click">Location</asp:LinkButton>
         <br />
         Search _ By _ Category(ID)：<asp:TextBox ID="TextBox1" runat="server" Height="27px" Width="138px"></asp:TextBox>
         <asp:Button ID="Button1" runat="server" Height="31px" Text="ENTER" Width="66px" />

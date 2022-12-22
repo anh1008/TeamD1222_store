@@ -28,5 +28,10 @@ namespace WebApplication1203.Search
         {
             Response.Redirect("~/Search/search_3.aspx");   //Category(ID)
         }
+
+        protected void LinkButton5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Search/search_4.aspx");   //Location
+        }
     }
 }
