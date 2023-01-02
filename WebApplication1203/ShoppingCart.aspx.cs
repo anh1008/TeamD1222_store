@@ -5,16 +5,11 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebApplication1203.Products
+namespace WebApplication1203
 {
-    public partial class list : System.Web.UI.Page
+    public partial class ShoppingCart : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void FormView1_PageIndexChanging(object sender, FormViewPageEventArgs e)
         {
 
         }
