@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 namespace WebApplication1203.Products
 {
@@ -18,5 +19,13 @@ namespace WebApplication1203.Products
         {
 
         }
+
+        protected void Products_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
+
+      
+
     }
 }

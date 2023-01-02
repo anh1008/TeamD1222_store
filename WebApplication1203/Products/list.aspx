@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="list.aspx.cs" Inherits="WebApplication1203.Products.list" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    Shopping Cart:<br />
+    <br />
     <asp:SqlDataSource ID="cart1" runat="server" ConnectionString="<%$ ConnectionStrings:BookStoreConnectionString7 %>" InsertCommand="INSERT INTO ShoppingCar(ProductID, Title, Category_ID, Price) VALUES (@ProductID, @Title, @Category_ID, @Price)" SelectCommand="SELECT * FROM [ShoppingCar]">
         <InsertParameters>
             <asp:Parameter Name="ProductID" />
@@ -53,7 +53,7 @@
             <asp:TextBox ID="TitleTextBox0" runat="server" Text='<%# Bind("Title") %>' />
             <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="加入購物車" />
             <br />
-            &nbsp;<br />&nbsp;
+            &nbsp;<br />
         </InsertItemTemplate>
         <ItemTemplate>
             Product_ID:
@@ -71,14 +71,16 @@
             <asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="新增" />
         </ItemTemplate>
     </asp:FormView>
+                <a href="https://localhost:44345/Shoppingcart" class="btn btn-default" style="background-color:orange; border-radius:5px;border:0px">Check cart &raquo;</a>;
 <br />
+     <h1>
+                &nbsp;</h1>
 <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="Description" DataValueField="Category_ID">
 </asp:DropDownList>
-&nbsp;&nbsp;&nbsp; To buy books,please enter title here:
-    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-&nbsp;
-    <asp:Button ID="Button1" runat="server" Text="Buy" />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+   
 &nbsp;<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BookStoreConnectionString %>" SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
+   
 &nbsp;<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Product_ID" DataSourceID="Products">
     <Columns>
         <asp:BoundField DataField="Product_ID" HeaderText="Product_ID" ReadOnly="True" SortExpression="Product_ID" />
@@ -90,7 +92,7 @@
         <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
     </Columns>
 </asp:GridView>
-<asp:SqlDataSource ID="Products" runat="server" ConnectionString="<%$ ConnectionStrings:BookStoreConnectionString %>" SelectCommand="SELECT * FROM [Products] WHERE ([Category_ID] = @Category_ID)">
+<asp:SqlDataSource ID="Products" runat="server" ConnectionString="<%$ ConnectionStrings:BookStoreConnectionString %>" SelectCommand="SELECT * FROM [Products] WHERE ([Category_ID] = @Category_ID)" OnSelecting="Products_Selecting">
     <SelectParameters>
         <asp:ControlParameter ControlID="DropDownList1" Name="Category_ID" PropertyName="SelectedValue" Type="Int32" />
     </SelectParameters>

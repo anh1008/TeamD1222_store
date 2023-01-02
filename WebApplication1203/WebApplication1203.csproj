@@ -163,6 +163,7 @@
     <Content Include="Search\search_3.aspx" />
     <Content Include="Search\search_4.aspx" />
     <Content Include="Sell.aspx" />
+    <Content Include="ShoppingCart.aspx" />
     <Content Include="Site.Master" />
     <Content Include="StoreAPI.aspx" />
     <Content Include="storeapi.css" />
@@ -197,6 +198,13 @@
     </Compile>
     <Compile Include="Sell.aspx.designer.cs">
       <DependentUpon>Sell.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.designer.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
     </Compile>
     <Compile Include="StoreAPI.aspx.cs">
       <DependentUpon>StoreAPI.aspx</DependentUpon>

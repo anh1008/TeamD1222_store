@@ -23,7 +23,7 @@ namespace WebApplication1203
             {
                 SqlConnection con = new SqlConnection(
            "Data Source=140.118.105.204,1433;Initial Catalog=Bookstore;User ID=test;Password=#Te1amD0!");
-                SqlCommand command = new SqlCommand("INSERT INTO [dbo].[Products] ( [category_id],[title],[payment_seller],  [location], [country], [condition], [price]) VALUES(@category_id,@title, @payment_seller, @location, @country, @condition, @price)", con);
+                SqlCommand command = new SqlCommand("INSERT INTO [dbo].[Products] ( [Category_ID],[Title],[Payment_seller],  [Location], [Country], [Condition], [Price]) VALUES(@category_id,@title, @payment_seller, @location, @country, @condition, @price)", con);
                 command.Parameters.AddWithValue("category_id", DropDownList1.SelectedValue);
                 command.Parameters.AddWithValue("title", TB1.Text);
                 command.Parameters.AddWithValue("payment_seller", TB2.Text);
